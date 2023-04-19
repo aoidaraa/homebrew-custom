@@ -8,9 +8,7 @@ cask "typora" do
   homepage "https://typora.io/"
 
   livecheck do
-    url "https://www.typora.io/download/dev_update.xml"
-    strategy :page_match
-    regex(/Typora-(\d+(?:\.\d+)+)\.dmg/i)
+    skip "Only the current version is required"
   end
 
   auto_updates true
